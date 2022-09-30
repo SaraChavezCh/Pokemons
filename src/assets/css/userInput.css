@@ -1,0 +1,137 @@
+.user-input {
+  width: 100%;
+  text-align: center;
+}
+
+.userInput-img {
+  
+  width: 150px;
+}
+.pokeball-container {
+  position: fixed;
+  right: -4rem;
+  top: -3rem;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+.userInput-img2 {
+  width: 100%;
+  opacity: 0.3;
+  animation-name: pokeball;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+}
+
+@keyframes pokeball {
+  form {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.userInput-welcome-title {
+ color: var(--text);
+  margin: 0rem auto 1rem;
+  padding-top: 4rem;
+  width: 100%;
+  column-gap: 2rem;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.userInput-title {
+  color: var(--text);
+  font-size: 28px;
+  width: 3rem;
+}
+
+.input-control{
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.userInput-container {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+}
+.userInput-welcome {
+  font-weight: 500;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.userInput-input {
+  background-color: var(--white);
+  padding-left: 1rem;
+  font-size: 18px;
+  border-radius: 2rem;
+  height: 3rem;
+  width: 100%;
+  border: none;
+  box-shadow: 10px 10px 10px var(--shadow),
+    -5px -5px 10px var(--shadow);
+  color:var(--text)
+}
+
+
+.send-name {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  top: 0px;
+  right: 0rem;
+  border: none;
+  background-color: var(--green);
+  text-align: center;
+}
+
+.fa-paper-plane {
+  color: var(--white);
+  font-size: 18px;
+}
+
+.fa-gear{
+  color: white;
+}
+@media screen and (min-width: 768px){
+.pokeball-container{
+  width: 400px;
+  height: 400px;
+}
+.userInput-input{
+  width: 20rem;
+}
+.input-control{
+  width: 20rem;
+}
+.settings{
+  right: 2rem;
+  bottom: 1rem;
+ color: white;
+}
+.settings:hover {
+  transform: rotate(1turn);
+  transition-duration: 1s;
+}
+}
+@media screen and (min-width: 1024px){
+  .pokeball-container{
+    width: 500px;
+    height: 500px;
+  }
+  .userInput-input{
+    width: 24rem;
+  }
+  .input-control{
+    width: 24rem;
+  }
+
+  }
